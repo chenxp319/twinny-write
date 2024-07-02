@@ -85,5 +85,28 @@ Here is the unidiff: \`\`\`{{code}}\`\`\`
   {
     name: 'fim-system',
     template: ''
-  }
+  },
+  {
+    name: 'Rewrite',
+    template: `
+    string {{{code}}}Content`.trim()
+  },
+  {
+    name: 'Summary',
+    template: `
+string
+{{{code}}}
+content
+{{{language}}}
+  `.trim()
+  },
+  {
+    name: 'Expand',
+    template: `
+string
+{{{code}}}
+content
+{{{language}}}
+  `.trim()
+  },
 ]

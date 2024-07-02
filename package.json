@@ -30,7 +30,7 @@
     "url": "https://github.com/rjmacarthy/twinny"
   },
   "license": "MIT",
-  "publisher": "rjmacarthy",
+  "publisher": "chenxiaopeng",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -78,6 +78,18 @@
         {
           "when": "editorTextFocus",
           "command": "twinny.generateDocs"
+        },
+        {
+          "when": "editorTextFocus",
+          "command": "twinny.Rewrite"
+        },
+        {
+          "when": "editorTextFocus",
+          "command": "twinny.Summary"
+        },
+        {
+          "when": "editorTextFocus",
+          "command": "twinny.Expand"
         }
       ],
       "view/title": [
@@ -138,6 +150,18 @@
       {
         "command": "twinny.generateDocs",
         "title": "Twinny - Generate docs"
+      },
+      {
+        "command": "twinny.Rewrite",
+        "title": "Twinny - Rewrite"
+      },
+      {
+        "command": "twinny.Summary",
+        "title": "Twinny - Summary"
+      },
+      {
+        "command": "twinny.Expand",
+        "title": "Twinny - Expand"
       },
       {
         "command": "twinny.enable",
