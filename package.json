@@ -2,7 +2,7 @@
   "name": "twinny-write",
   "displayName": "twinny-write - AI Code Completion and Chat",
   "description": "Locally hosted AI code completion plugin for vscode",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "icon": "assets/icon.png",
   "keywords": [
     "code-inference",

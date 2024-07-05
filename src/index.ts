@@ -89,6 +89,30 @@ export async function activate(context: ExtensionContext) {
         sidebarProvider.chatService?.streamTemplateCompletion('add-tests')
       )
     }),
+    commands.registerCommand(TWINNY_COMMAND_NAME.Expand, () => {
+      commands.executeCommand(TWINNY_COMMAND_NAME.focusSidebar)
+      delayExecution(() =>
+        sidebarProvider.chatService?.streamTemplateCompletion('Expand')
+      )
+    }),
+    commands.registerCommand(TWINNY_COMMAND_NAME.Summary, () => {
+      commands.executeCommand(TWINNY_COMMAND_NAME.focusSidebar)
+      delayExecution(() =>
+        sidebarProvider.chatService?.streamTemplateCompletion('Summary')
+      )
+    }),
+    commands.registerCommand(TWINNY_COMMAND_NAME.Rewrite, () => {
+      commands.executeCommand(TWINNY_COMMAND_NAME.focusSidebar)
+      delayExecution(() =>
+        sidebarProvider.chatService?.streamTemplateCompletion('Rewrite')
+      )
+    }),
+    // commands.registerCommand(TWINNY_COMMAND_NAME.system, () => {
+    //   commands.executeCommand(TWINNY_COMMAND_NAME.focusSidebar)
+    //   delayExecution(() =>
+    //     sidebarProvider.chatService?.streamTemplateCompletion('system')
+    //   )
+    // }),
     commands.registerCommand(
       TWINNY_COMMAND_NAME.templateCompletion,
       (template: string) => {

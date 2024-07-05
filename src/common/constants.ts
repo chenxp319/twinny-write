@@ -62,6 +62,10 @@ export const EVENT_NAME = {
 export const TWINNY_COMMAND_NAME = {
   addTests: 'twinny.addTests',
   addTypes: 'twinny.addTypes',
+  Expand:'twinny.Expand',
+  Summary:'twinny.Summary',
+  Rewrite:'twinny.Rewrite',
+  // system:'twinny.system',
   conversationHistory: 'twinny.conversationHistory',
   disable: 'twinny.disable',
   enable: 'twinny.enable',

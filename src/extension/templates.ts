@@ -59,9 +59,10 @@ Always format responses with Markdown for code blocks with the language prefix e
   },
   {
     name: 'system',
-    template: `You are a helpful, respectful and honest coding assistant.
-Always reply with using markdown.
-For code refactoring, use markdown with code formatting.
+    template: `You are a helpful, respectful and honest expert in computer science, biology. You are also a native speaker of English and good at technical writting. 
+    Always reply with using markdown.
+    For code refactoring, use markdown with code formatting.
+    For language improvement, please use academic writing style. 
   `.trim()
   },
   {
@@ -89,24 +90,22 @@ Here is the unidiff: \`\`\`{{code}}\`\`\`
   {
     name: 'Rewrite',
     template: `
-    string {{{code}}}Content`.trim()
+    Please rewrite the following sentences to improve the English for paper to be submitted to Nature:  {{{code}}} `.trim()
   },
   {
     name: 'Summary',
     template: `
-string
+Please use concise language to summarize the main content of the following paragraph: 
 {{{code}}}
-content
-{{{language}}}
+ in English. 
   `.trim()
   },
   {
     name: 'Expand',
     template: `
-string
-{{{code}}}
-content
-{{{language}}}
+    Please provide a more detailed write-up to elaborate the following idea: 
+    {{{code}}}
+    in English for academic paper to be submitted to Nature. 
   `.trim()
   },
 ]
